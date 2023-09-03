@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  height: 100vh; /*vh unit stands for the viewport height and is relative to 1% of the height of the viewport */
+  margin: 0; /*removes the horizontal scroll-bar, added by default by some browsers */
+  background-color: #1b1b32;
+  color: #f5f6f7; /* text color */
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+}
+
+fieldset {
+  padding: 2rem 0; /*adds 2rem of padding to the top and bottom of each fieldset, and removes the padding from left and right */
+  border: 0; /*removes the borders */
+  border-bottom: 3px solid #3b3b4f; /* adds a bit of separation between the fieldset elements */
+}
+
+fieldset:last-of-type { /*selects the last fieldset element, and removes its bottom border */
+  border-bottom: none;
+}
+
+/*Makes the label text appear above the form elements. Makes input, textarea and select elements take up the full width of their parent elements*/
+input, textarea, select { 
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
